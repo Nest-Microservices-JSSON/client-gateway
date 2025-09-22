@@ -7,9 +7,11 @@ import { RpcCustomExceptionFilter } from './common';
 async function bootstrap() {
   const logger = new Logger('Main-gateway')
   const app = await NestFactory.create(AppModule);
+  
+  logger.log('Hola mundo by Docker')
 
   app.setGlobalPrefix('api');
-
+  
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
