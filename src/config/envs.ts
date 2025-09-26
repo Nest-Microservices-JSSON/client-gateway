@@ -3,11 +3,6 @@ import * as joi from 'joi';
 
 interface EnvVars {
   PORT: number;
-  // PRODUCTS_SERVICE_HOST: string;
-  // PRODUCTS_SERVICE_PORT: number;
-  // ORDERS_SERVICE_HOST: string;
-  // ORDERS_SERVICE_PORT: number;
-
   NATS_SERVERS: string[];
 }
 
